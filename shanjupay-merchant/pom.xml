@@ -11,5 +11,6 @@
 
     <artifactId>shanjupay-merchant</artifactId>
     <packaging>pom</packaging>
+    <description>商户服务工程</description>
 
 </project>

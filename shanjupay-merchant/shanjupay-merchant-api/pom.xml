@@ -10,8 +10,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>shanjupay-merchant-api</artifactId>
-
+    <description>商户服务工程API</description>
 <dependencies>
+    <!--公共服务-->
     <dependency>
         <groupId>com.shanjupay</groupId>
         <artifactId>shanjupay-common</artifactId>

@@ -9,6 +9,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * @author Administrator
  * @version 1.0
+ * mybatisPlus配置
  **/
 @Configuration
 @MapperScan("com.shanjupay.**.mapper")
