@@ -28,6 +28,10 @@ public interface MerchantConvert {
     List<MerchantDTO> entityList2dtoList(List<Merchant> merchants);
 
 
+    /**
+     * 下方为测试
+     * @param args
+     */
     public static void main(String[] args) {
         //将dto转成entity
         Merchant merchant  =new Merchant();

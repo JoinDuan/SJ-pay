@@ -49,11 +49,11 @@ public class TransactionServiceImpl implements TransactionService {
     @Value("${shanjupay.payurl}")
     String payurl;
 
-    @Value("${weixin.oauth2RequestUrl}")
+    //@Value("${weixin.oauth2RequestUrl}")
     String oauth2RequestUrl;
-    @Value("${weixin.oauth2CodeReturnUrl}")
+    //@Value("${weixin.oauth2CodeReturnUrl}")
     String oauth2CodeReturnUrl;
-    @Value("${weixin.oauth2Token}")
+    //@Value("${weixin.oauth2Token}")
     String oauth2Token;
 
 
@@ -76,7 +76,8 @@ public class TransactionServiceImpl implements TransactionService {
     /**
      * 生成门店二维码的url
      *
-     * @param qrCodeDto@return 支付入口（url），要携带参数（将传入的参数转成json，用base64编码）
+     * @param qrCodeDto merchantId,appId等
+     * @return 支付入口（url），要携带参数（将传入的参数转成json，用base64编码）
      * @throws BusinessException
      */
     @Override

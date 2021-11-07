@@ -68,12 +68,14 @@ public class PayChannelAgentServiceImpl implements PayChannelAgentService {
         model.setOutTradeNo(alipayBean.getOutTradeNo());//商户的订单，就是闪聚平台的订单
         model.setTotalAmount(alipayBean.getTotalAmount());//订单金额（元）
         model.setSubject(alipayBean.getSubject());
-        model.setBody(alipayBean.getBody());
+        model.setBody(alipayBean.getBody());//商品描述
         model.setProductCode("QUICK_WAP_PAY");//产品代码，固定QUICK_WAP_PAY
-        model.setTimeoutExpress(alipayBean.getExpireTime());//订单过期时间
+        model.setTimeoutExpress(alipayBean.getExpireTime());//订单过期时间,关单时间
         alipayRequest.setBizModel(model);
 
+        //同步回调地址
         alipayRequest.setReturnUrl(returnUrl);
+        //异步回地址
         alipayRequest.setNotifyUrl(notifyUrl);
         try {
             //请求支付宝下单接口,发起http请求

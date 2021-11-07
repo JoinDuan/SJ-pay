@@ -65,8 +65,8 @@ public class AppServiceImpl implements AppService {
         String appId = UUID.randomUUID().toString();
 
         App entity = AppCovert.INSTANCE.dto2entity(appDTO);
-        entity.setAppId(appId);//应用id
-        entity.setMerchantId(merchantId);//商户id
+        entity.setAppId(appId);//应用id ***
+        entity.setMerchantId(merchantId);//商户id ***
 
         //调用 appMapper向app表插入数据
         appMapper.insert(entity);

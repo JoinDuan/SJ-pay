@@ -17,7 +17,7 @@ import java.util.Map;
  * @author Administrator
  * @version 1.0
  **/
-@org.springframework.stereotype.Service  //实例为一个bean
+@org.springframework.stereotype.Service  //实例为一个bean dubbo的service
 @Slf4j
 public class SmsServiceImpl implements SmsService{
 

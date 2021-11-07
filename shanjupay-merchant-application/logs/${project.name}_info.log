@@ -1,6 +1,537 @@
-[${project.name}][${env:SERVER_PORT}] 2020-01-02 14:58:53,444 INFO [main][AbstractTestContextBootstrapper.java:308] - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.shanjupay.merchant.TokenTemp], using SpringBootContextLoader
-[${project.name}][${env:SERVER_PORT}] 2020-01-02 14:58:53,466 INFO [main][AbstractContextLoader.java:264] - Could not detect default resource locations for test class [com.shanjupay.merchant.TokenTemp]: no resource found for suffixes {-context.xml, Context.groovy}.
-[${project.name}][${env:SERVER_PORT}] 2020-01-02 14:58:53,468 INFO [main][AnnotationConfigContextLoaderUtils.java:83] - Could not detect default configuration classes for test class [com.shanjupay.merchant.TokenTemp]: TokenTemp does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-[${project.name}][${env:SERVER_PORT}] 2020-01-02 14:58:53,632 INFO [main][SpringBootTestContextBootstrapper.java:247] - Found @SpringBootConfiguration com.shanjupay.merchant.MerchantApplicationBootstrap for test class com.shanjupay.merchant.TokenTemp
-[${project.name}][${env:SERVER_PORT}] 2020-01-02 14:58:53,774 INFO [main][AbstractTestContextBootstrapper.java:248] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-[${project.name}][${env:SERVER_PORT}] 2020-01-02 14:58:53,791 INFO [main][AbstractTestContextBootstrapper.java:177] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@29f7cefd, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@700fb871, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3b35a229, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@9816741, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1e16c0aa, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@13d73f29, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@565f390, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7dc3712, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2f67a4d3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5e3f861]
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:20,139 INFO [main][AbstractTestContextBootstrapper.java:308] - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.shanjupay.merchant.TokenTemp], using SpringBootContextLoader
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:20,159 INFO [main][AbstractContextLoader.java:264] - Could not detect default resource locations for test class [com.shanjupay.merchant.TokenTemp]: no resource found for suffixes {-context.xml, Context.groovy}.
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:20,163 INFO [main][AnnotationConfigContextLoaderUtils.java:83] - Could not detect default configuration classes for test class [com.shanjupay.merchant.TokenTemp]: TokenTemp does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:20,347 INFO [main][SpringBootTestContextBootstrapper.java:247] - Found @SpringBootConfiguration com.shanjupay.merchant.MerchantApplicationBootstrap for test class com.shanjupay.merchant.TokenTemp
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:20,491 INFO [main][AbstractTestContextBootstrapper.java:248] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:20,508 INFO [main][AbstractTestContextBootstrapper.java:177] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2f953efd, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@f68f0dc, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@d2de489, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@14bdbc74, org.springframework.test.context.support.DirtiesContextTestExecutionListener@12591ac8, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5a7fe64f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@38145825, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@41330d4f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1b66c0fb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3e0e1046]
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:21,577 INFO [main][:] - using logger: org.apache.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:21,585 INFO [main][WelcomeLogoApplicationListener.java:63] - 
+
+ :: Dubbo Spring Boot (v2.7.1) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.7.3) : https://github.com/apache/incubator-dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:21,595 INFO [main][OverrideDubboConfigApplicationListener.java:68] - Dubbo Config was overridden by externalized configuration {dubbo.application.name=merchant-application, dubbo.application.qos-enable=false, dubbo.application.qos.port=22310, dubbo.config.multiple=true, dubbo.consumer.check=false, dubbo.consumer.retries=-1, dubbo.consumer.timeout=3000, dubbo.protocol.name=dubbo, dubbo.protocol.port=20891, dubbo.registry.address=nacos://127.0.0.1:8848, dubbo.scan.base-packages=com.shanjupay}
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:22,117 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c0584c29] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:22,223 INFO [pool-3-thread-1][AwaitingNonWebApplicationListener.java:140] -  [Dubbo] Current Spring Boot Application is await...
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:22,961 INFO [main][OverrideDubboConfigApplicationListener.java:68] - Dubbo Config was overridden by externalized configuration {dubbo.application.name=merchant-application, dubbo.application.qos-enable=false, dubbo.application.qos.port=22310, dubbo.config.multiple=true, dubbo.consumer.check=false, dubbo.consumer.retries=-1, dubbo.consumer.timeout=3000, dubbo.protocol.name=dubbo, dubbo.protocol.port=20891, dubbo.registry.address=nacos://127.0.0.1:8848, dubbo.scan.base-packages=com.shanjupay}
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:23,610 INFO [main][NacosPropertySourceBuilder.java:87] - Loading nacos data, dataId: 'spring-boot-http.yaml', group: 'COMMON_GROUP'
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:23,614 ERROR [main][NacosPropertySourceBuilder.java:109] - parse data from Nacos error,dataId:spring-boot-http.yaml,data:#HTTP格式配置 
+spring: 
+    http: 
+        encoding: 
+            charset: UTF‐8 
+            force: true 
+            enabled: true 
+    messages: encoding: UTF‐8
+
+#tomcat头信息(用户ip和访问协议)及访问路径配置 
+server: 
+    tomcat: 
+        remote_ip_header: x‐forwarded‐for 
+        protocol_header: x‐forwarded‐proto 
+    servlet: 
+        context‐path: / 
+    use‐forward‐headers: true
+
+#服务监控与管理配置，运维相关 
+management: 
+    endpoints: 
+        web:
+            exposure: 
+                include: refresh,health,info,env,
+mapping values are not allowed here
+ in 'reader', line 8, column 23:
+        messages: encoding: UTF‐8
+                          ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchValue(ScannerImpl.java:870)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:358)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:227)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingKey.produce(ParserImpl.java:558)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:148)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:214)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:236)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:227)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:215)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:85)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getData(BaseConstructor.java:123)
+	at org.yaml.snakeyaml.Yaml$1.next(Yaml.java:547)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:161)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:134)
+	at org.springframework.beans.factory.config.YamlPropertiesFactoryBean.createProperties(YamlPropertiesFactoryBean.java:135)
+	at org.springframework.beans.factory.config.YamlPropertiesFactoryBean.getObject(YamlPropertiesFactoryBean.java:115)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder.loadNacosData(NacosPropertySourceBuilder.java:100)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder.build(NacosPropertySourceBuilder.java:75)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadNacosDataIfPresent(NacosPropertySourceLocator.java:179)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadExtConfiguration(NacosPropertySourceLocator.java:129)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.locate(NacosPropertySourceLocator.java:87)
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:94)
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:649)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:373)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:23,633 INFO [main][NacosPropertySourceBuilder.java:87] - Loading nacos data, dataId: 'merchant-application.yaml', group: 'SHANJUPAY_GROUP'
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:23,635 INFO [main][PropertySourceBootstrapConfiguration.java:98] - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource@1897221921 {name='merchant-application.yaml', properties={sms.url=http://localhost:56085/sailing, oss.qiniu.bucket=, server.servlet.context‐path=/merchant, swagger.enable=true, sms.effectiveTime=600, oss.qiniu.url=, oss.qiniu.secretKey=, oss.qiniu.accessKey=}}, NacosPropertySource@368153528 {name='spring-boot-http.yaml', properties={}}]}
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:23,677 INFO [main][SpringApplication.java:675] - No active profile set, falling back to default profiles: default
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:25,233 WARN [main][EndpointId.java:135] - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:25,237 WARN [main][EndpointId.java:135] - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:25,251 DEBUG [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.ApplicationConfig] within prefix [dubbo.applications]
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:25,251 DEBUG [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.ModuleConfig] within prefix [dubbo.modules]
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:25,252 DEBUG [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.RegistryConfig] within prefix [dubbo.registries]
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:25,252 DEBUG [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.ProtocolConfig] within prefix [dubbo.protocols]
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:25,252 DEBUG [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.MonitorConfig] within prefix [dubbo.monitors]
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:25,253 DEBUG [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.ProviderConfig] within prefix [dubbo.providers]
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:25,253 DEBUG [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.ConsumerConfig] within prefix [dubbo.consumers]
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:25,253 DEBUG [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.spring.ConfigCenterBean] within prefix [dubbo.config-centers]
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:25,254 DEBUG [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.MetadataReportConfig] within prefix [dubbo.metadata-reports]
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:25,255 INFO [main][DubboConfigBindingRegistrar.java:127] - The dubbo config bean definition [name : org.apache.dubbo.config.ApplicationConfig#0, class : org.apache.dubbo.config.ApplicationConfig] has been registered.
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:25,256 INFO [main][DubboConfigBindingRegistrar.java:151] - The BeanPostProcessor bean definition [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : org.apache.dubbo.config.ApplicationConfig#0] has been registered.
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:25,257 DEBUG [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.ModuleConfig] within prefix [dubbo.module]
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:25,257 INFO [main][DubboConfigBindingRegistrar.java:127] - The dubbo config bean definition [name : org.apache.dubbo.config.RegistryConfig#0, class : org.apache.dubbo.config.RegistryConfig] has been registered.
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:25,257 INFO [main][DubboConfigBindingRegistrar.java:151] - The BeanPostProcessor bean definition [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : org.apache.dubbo.config.RegistryConfig#0] has been registered.
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:25,258 INFO [main][DubboConfigBindingRegistrar.java:127] - The dubbo config bean definition [name : org.apache.dubbo.config.ProtocolConfig#0, class : org.apache.dubbo.config.ProtocolConfig] has been registered.
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:25,258 INFO [main][DubboConfigBindingRegistrar.java:151] - The BeanPostProcessor bean definition [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : org.apache.dubbo.config.ProtocolConfig#0] has been registered.
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:25,258 DEBUG [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.MonitorConfig] within prefix [dubbo.monitor]
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:25,258 DEBUG [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.ProviderConfig] within prefix [dubbo.provider]
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:25,258 INFO [main][DubboConfigBindingRegistrar.java:127] - The dubbo config bean definition [name : org.apache.dubbo.config.ConsumerConfig#0, class : org.apache.dubbo.config.ConsumerConfig] has been registered.
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:25,259 INFO [main][DubboConfigBindingRegistrar.java:151] - The BeanPostProcessor bean definition [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : org.apache.dubbo.config.ConsumerConfig#0] has been registered.
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:25,259 DEBUG [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.spring.ConfigCenterBean] within prefix [dubbo.config-center]
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:25,259 DEBUG [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.MetadataReportConfig] within prefix [dubbo.metadata-report]
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:25,565 WARN [main][EndpointId.java:135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:25,653 INFO [main][ServiceAnnotationBeanPostProcessor.java:204] -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:25,654 INFO [main][ServiceAnnotationBeanPostProcessor.java:206] -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:25,729 WARN [main][ServiceAnnotationBeanPostProcessor.java:169] -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.shanjupay], dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:25,733 INFO [main][ConfigurationClassPostProcessor.java:380] - Cannot enhance @Configuration bean definition 'org.apache.dubbo.spring.boot.autoconfigure.DubboRelaxedBinding2AutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:25,733 INFO [main][ConfigurationClassPostProcessor.java:380] - Cannot enhance @Configuration bean definition 'org.apache.dubbo.spring.boot.autoconfigure.DubboAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:25,966 INFO [main][GenericScope.java:294] - BeanFactory id=8dd8ae07-342a-339b-964d-d7dd46a61a24
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:26,416 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.autoconfigure.DubboOpenFeignAutoConfiguration' of type [com.alibaba.cloud.dubbo.autoconfigure.DubboOpenFeignAutoConfiguration$$EnhancerBySpringCGLIB$$27ff9830] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:26,447 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'dubbo.cloud-com.alibaba.cloud.dubbo.env.DubboCloudProperties' of type [com.alibaba.cloud.dubbo.env.DubboCloudProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:26,475 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'metadataJsonResolver' of type [com.alibaba.cloud.dubbo.metadata.resolver.DubboServiceBeanMetadataResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:26,495 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.apache.dubbo.config.ApplicationConfig#0' of type [org.apache.dubbo.config.ApplicationConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:26,504 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'dubboProtocolConfigSupplier' of type [com.alibaba.cloud.dubbo.metadata.DubboProtocolConfigSupplier] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:26,505 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.DubboMetadataServiceExporter' of type [com.alibaba.cloud.dubbo.service.DubboMetadataServiceExporter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:26,507 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.autoconfigure.DubboMetadataAutoConfiguration' of type [com.alibaba.cloud.dubbo.autoconfigure.DubboMetadataAutoConfiguration$$EnhancerBySpringCGLIB$$9a3f34aa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:26,515 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.autoconfigure.DubboServiceAutoConfiguration' of type [com.alibaba.cloud.dubbo.autoconfigure.DubboServiceAutoConfiguration$$EnhancerBySpringCGLIB$$2ce93d02] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:26,527 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'dubboGenericServiceFactory' of type [com.alibaba.cloud.dubbo.service.DubboGenericServiceFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:26,533 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'dubboMetadataConfigServiceProxy' of type [com.alibaba.cloud.dubbo.service.DubboMetadataServiceProxy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:26,542 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.client.discovery.composite.CompositeDiscoveryClientAutoConfiguration' of type [org.springframework.cloud.client.discovery.composite.CompositeDiscoveryClientAutoConfiguration$$EnhancerBySpringCGLIB$$ed2e76bc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:26,551 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.nacos.discovery.NacosDiscoveryClientAutoConfiguration' of type [com.alibaba.cloud.nacos.discovery.NacosDiscoveryClientAutoConfiguration$$EnhancerBySpringCGLIB$$e0f97f81] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:26,570 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.commons.util.UtilAutoConfiguration' of type [org.springframework.cloud.commons.util.UtilAutoConfiguration$$EnhancerBySpringCGLIB$$6bec12b0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:26,580 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'inetUtilsProperties' of type [org.springframework.cloud.commons.util.InetUtilsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:26,583 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'inetUtils' of type [org.springframework.cloud.commons.util.InetUtils] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:27,204 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'nacosProperties' of type [com.alibaba.cloud.nacos.NacosDiscoveryProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:27,211 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'nacosDiscoveryClient' of type [com.alibaba.cloud.nacos.discovery.NacosDiscoveryClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:27,370 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'server-org.springframework.boot.autoconfigure.web.ServerProperties' of type [org.springframework.boot.autoconfigure.web.ServerProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:27,375 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.client.discovery.simple.SimpleDiscoveryClientAutoConfiguration' of type [org.springframework.cloud.client.discovery.simple.SimpleDiscoveryClientAutoConfiguration$$EnhancerBySpringCGLIB$$b95d0f8a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:28,073 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'simpleDiscoveryProperties' of type [org.springframework.cloud.client.discovery.simple.SimpleDiscoveryProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:28,078 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'simpleDiscoveryClient' of type [org.springframework.cloud.client.discovery.simple.SimpleDiscoveryClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:28,086 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'compositeDiscoveryClient' of type [org.springframework.cloud.client.discovery.composite.CompositeDiscoveryClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:28,093 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.util.JSONUtils' of type [com.alibaba.cloud.dubbo.util.JSONUtils] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:28,291 WARN [main][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:0) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:28,292 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.metadata.repository.DubboServiceMetadataRepository' of type [com.alibaba.cloud.dubbo.metadata.repository.DubboServiceMetadataRepository] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:28,323 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.parameter.RequestParamServiceParameterResolver' of type [com.alibaba.cloud.dubbo.service.parameter.RequestParamServiceParameterResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:28,344 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'spring.http-org.springframework.boot.autoconfigure.http.HttpProperties' of type [org.springframework.boot.autoconfigure.http.HttpProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:28,354 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration' of type [org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration$$EnhancerBySpringCGLIB$$f17fdb60] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:28,371 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'stringHttpMessageConverter' of type [org.springframework.http.converter.StringHttpMessageConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:28,381 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration' of type [org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration$$EnhancerBySpringCGLIB$$2b55d760] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:28,393 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration$$EnhancerBySpringCGLIB$$ffd1c8bd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:28,404 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration$$EnhancerBySpringCGLIB$$b21e8ad6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:28,415 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$$EnhancerBySpringCGLIB$$6d3570c5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:28,422 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties' of type [org.springframework.boot.autoconfigure.jackson.JacksonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:28,432 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'standardJacksonObjectMapperBuilderCustomizer' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$StandardJackson2ObjectMapperBuilderCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:28,442 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration$$EnhancerBySpringCGLIB$$9400e7f3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:28,499 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'parameterNamesModule' of type [com.fasterxml.jackson.module.paramnames.ParameterNamesModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:28,506 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$$EnhancerBySpringCGLIB$$e1dd664c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:28,522 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jsonComponentModule' of type [org.springframework.boot.jackson.JsonComponentModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:28,527 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jacksonObjectMapperBuilder' of type [org.springframework.http.converter.json.Jackson2ObjectMapperBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:28,565 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jacksonObjectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:28,580 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'mappingJackson2HttpMessageConverter' of type [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:28,592 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration' of type [org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$$EnhancerBySpringCGLIB$$be7214c0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:28,644 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'messageConverters' of type [org.springframework.boot.autoconfigure.http.HttpMessageConverters] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:28,651 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.parameter.RequestBodyServiceParameterResolver' of type [com.alibaba.cloud.dubbo.service.parameter.RequestBodyServiceParameterResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:28,667 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.parameter.RequestHeaderServiceParameterResolver' of type [com.alibaba.cloud.dubbo.service.parameter.RequestHeaderServiceParameterResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:28,682 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.parameter.PathVariableServiceParameterResolver' of type [com.alibaba.cloud.dubbo.service.parameter.PathVariableServiceParameterResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:28,683 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.DubboGenericServiceExecutionContextFactory' of type [com.alibaba.cloud.dubbo.service.DubboGenericServiceExecutionContextFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:28,713 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'relaxedDubboConfigBinder' of type [org.apache.dubbo.spring.boot.autoconfigure.BinderDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:28,724 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'relaxedDubboConfigBinder' of type [org.apache.dubbo.spring.boot.autoconfigure.BinderDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:28,730 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'relaxedDubboConfigBinder' of type [org.apache.dubbo.spring.boot.autoconfigure.BinderDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:28,735 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'relaxedDubboConfigBinder' of type [org.apache.dubbo.spring.boot.autoconfigure.BinderDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:28,760 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c0584c29] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:29,043 DEBUG [main][AdaptiveClassCodeGenerator.java:104] -  [DUBBO] package org.apache.dubbo.rpc;
+import org.apache.dubbo.common.extension.ExtensionLoader;
+public class Protocol$Adaptive implements org.apache.dubbo.rpc.Protocol {
+public int getDefaultPort()  {
+throw new UnsupportedOperationException("The method public abstract int org.apache.dubbo.rpc.Protocol.getDefaultPort() of interface org.apache.dubbo.rpc.Protocol is not adaptive method!");
+}
+public void destroy()  {
+throw new UnsupportedOperationException("The method public abstract void org.apache.dubbo.rpc.Protocol.destroy() of interface org.apache.dubbo.rpc.Protocol is not adaptive method!");
+}
+public org.apache.dubbo.rpc.Exporter export(org.apache.dubbo.rpc.Invoker arg0) throws org.apache.dubbo.rpc.RpcException {
+if (arg0 == null) throw new IllegalArgumentException("org.apache.dubbo.rpc.Invoker argument == null");
+if (arg0.getUrl() == null) throw new IllegalArgumentException("org.apache.dubbo.rpc.Invoker argument getUrl() == null");
+org.apache.dubbo.common.URL url = arg0.getUrl();
+String extName = ( url.getProtocol() == null ? "dubbo" : url.getProtocol() );
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.rpc.Protocol) name from url (" + url.toString() + ") use keys([protocol])");
+org.apache.dubbo.rpc.Protocol extension = (org.apache.dubbo.rpc.Protocol)ExtensionLoader.getExtensionLoader(org.apache.dubbo.rpc.Protocol.class).getExtension(extName);
+return extension.export(arg0);
+}
+public org.apache.dubbo.rpc.Invoker refer(java.lang.Class arg0, org.apache.dubbo.common.URL arg1) throws org.apache.dubbo.rpc.RpcException {
+if (arg1 == null) throw new IllegalArgumentException("url == null");
+org.apache.dubbo.common.URL url = arg1;
+String extName = ( url.getProtocol() == null ? "dubbo" : url.getProtocol() );
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.rpc.Protocol) name from url (" + url.toString() + ") use keys([protocol])");
+org.apache.dubbo.rpc.Protocol extension = (org.apache.dubbo.rpc.Protocol)ExtensionLoader.getExtensionLoader(org.apache.dubbo.rpc.Protocol.class).getExtension(extName);
+return extension.refer(arg0, arg1);
+}
+}, dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:29,222 DEBUG [main][AdaptiveClassCodeGenerator.java:104] -  [DUBBO] package org.apache.dubbo.rpc.cluster;
+import org.apache.dubbo.common.extension.ExtensionLoader;
+public class Cluster$Adaptive implements org.apache.dubbo.rpc.cluster.Cluster {
+public org.apache.dubbo.rpc.Invoker join(org.apache.dubbo.rpc.cluster.Directory arg0) throws org.apache.dubbo.rpc.RpcException {
+if (arg0 == null) throw new IllegalArgumentException("org.apache.dubbo.rpc.cluster.Directory argument == null");
+if (arg0.getUrl() == null) throw new IllegalArgumentException("org.apache.dubbo.rpc.cluster.Directory argument getUrl() == null");
+org.apache.dubbo.common.URL url = arg0.getUrl();
+String extName = url.getParameter("cluster", "failover");
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.rpc.cluster.Cluster) name from url (" + url.toString() + ") use keys([cluster])");
+org.apache.dubbo.rpc.cluster.Cluster extension = (org.apache.dubbo.rpc.cluster.Cluster)ExtensionLoader.getExtensionLoader(org.apache.dubbo.rpc.cluster.Cluster.class).getExtension(extName);
+return extension.join(arg0);
+}
+}, dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:29,248 DEBUG [main][AdaptiveClassCodeGenerator.java:104] -  [DUBBO] package org.apache.dubbo.rpc;
+import org.apache.dubbo.common.extension.ExtensionLoader;
+public class ProxyFactory$Adaptive implements org.apache.dubbo.rpc.ProxyFactory {
+public org.apache.dubbo.rpc.Invoker getInvoker(java.lang.Object arg0, java.lang.Class arg1, org.apache.dubbo.common.URL arg2) throws org.apache.dubbo.rpc.RpcException {
+if (arg2 == null) throw new IllegalArgumentException("url == null");
+org.apache.dubbo.common.URL url = arg2;
+String extName = url.getParameter("proxy", "javassist");
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.rpc.ProxyFactory) name from url (" + url.toString() + ") use keys([proxy])");
+org.apache.dubbo.rpc.ProxyFactory extension = (org.apache.dubbo.rpc.ProxyFactory)ExtensionLoader.getExtensionLoader(org.apache.dubbo.rpc.ProxyFactory.class).getExtension(extName);
+return extension.getInvoker(arg0, arg1, arg2);
+}
+public java.lang.Object getProxy(org.apache.dubbo.rpc.Invoker arg0, boolean arg1) throws org.apache.dubbo.rpc.RpcException {
+if (arg0 == null) throw new IllegalArgumentException("org.apache.dubbo.rpc.Invoker argument == null");
+if (arg0.getUrl() == null) throw new IllegalArgumentException("org.apache.dubbo.rpc.Invoker argument getUrl() == null");
+org.apache.dubbo.common.URL url = arg0.getUrl();
+String extName = url.getParameter("proxy", "javassist");
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.rpc.ProxyFactory) name from url (" + url.toString() + ") use keys([proxy])");
+org.apache.dubbo.rpc.ProxyFactory extension = (org.apache.dubbo.rpc.ProxyFactory)ExtensionLoader.getExtensionLoader(org.apache.dubbo.rpc.ProxyFactory.class).getExtension(extName);
+return extension.getProxy(arg0, arg1);
+}
+public java.lang.Object getProxy(org.apache.dubbo.rpc.Invoker arg0) throws org.apache.dubbo.rpc.RpcException {
+if (arg0 == null) throw new IllegalArgumentException("org.apache.dubbo.rpc.Invoker argument == null");
+if (arg0.getUrl() == null) throw new IllegalArgumentException("org.apache.dubbo.rpc.Invoker argument getUrl() == null");
+org.apache.dubbo.common.URL url = arg0.getUrl();
+String extName = url.getParameter("proxy", "javassist");
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.rpc.ProxyFactory) name from url (" + url.toString() + ") use keys([proxy])");
+org.apache.dubbo.rpc.ProxyFactory extension = (org.apache.dubbo.rpc.ProxyFactory)ExtensionLoader.getExtensionLoader(org.apache.dubbo.rpc.ProxyFactory.class).getExtension(extName);
+return extension.getProxy(arg0);
+}
+}, dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:29,323 INFO [main][DubboConfigBindingBeanPostProcessor.java:109] - The properties of bean [name : org.apache.dubbo.config.ConsumerConfig#0] have been binding by prefix of configuration properties : dubbo.consumer
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:29,362 INFO [main][DubboConfigBindingBeanPostProcessor.java:109] - The properties of bean [name : org.apache.dubbo.config.RegistryConfig#0] have been binding by prefix of configuration properties : dubbo.registry
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:29,377 INFO [main][AnnotatedInterfaceConfigBeanBuilder.java:84] - The configBean[type:ReferenceBean] has been built.
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:29,411 WARN [main][AbstractInterfaceConfig.java:265] -  [DUBBO] There's no valid metadata config found, if you are using the simplified mode of registry url, please make sure you have a metadata address configured properly., dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:29,447 INFO [main][AbstractInterfaceConfig.java:237] -  [DUBBO] There's no valid monitor config found, if you want to open monitor statistics for Dubbo, please make sure your monitor is configured properly., dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:29,449 INFO [main][AbstractInterfaceConfig.java:237] -  [DUBBO] There's no valid monitor config found, if you want to open monitor statistics for Dubbo, please make sure your monitor is configured properly., dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:29,470 DEBUG [main][AdaptiveClassCodeGenerator.java:104] -  [DUBBO] package org.apache.dubbo.registry;
+import org.apache.dubbo.common.extension.ExtensionLoader;
+public class RegistryFactory$Adaptive implements org.apache.dubbo.registry.RegistryFactory {
+public org.apache.dubbo.registry.Registry getRegistry(org.apache.dubbo.common.URL arg0)  {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+org.apache.dubbo.common.URL url = arg0;
+String extName = ( url.getProtocol() == null ? "dubbo" : url.getProtocol() );
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.registry.RegistryFactory) name from url (" + url.toString() + ") use keys([protocol])");
+org.apache.dubbo.registry.RegistryFactory extension = (org.apache.dubbo.registry.RegistryFactory)ExtensionLoader.getExtensionLoader(org.apache.dubbo.registry.RegistryFactory.class).getExtension(extName);
+return extension.getRegistry(arg0);
+}
+}, dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:29,481 INFO [main][QosProtocolWrapper.java:89] -  [DUBBO] qos won't be started because it is disabled. Please check dubbo.application.qos.enable is configured either in system property, dubbo.properties or XML/spring-boot configuration., dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:29,482 WARN [main][SpringExtensionFactory.java:86] -  [DUBBO] No spring extension (bean) named:applicationContext, try to find an extension (bean) of type org.springframework.context.ConfigurableApplicationContext, dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:29,484 DEBUG [main][SpringExtensionFactory.java:99] -  [DUBBO] Error when get spring extension(bean) for type:org.springframework.context.ConfigurableApplicationContext, dubbo version: 2.7.3, current host: 192.168.2.70
+org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.context.ConfigurableApplicationContext' available
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:343)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:335)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1123)
+	at org.apache.dubbo.config.spring.extension.SpringExtensionFactory.getExtension(SpringExtensionFactory.java:94)
+	at org.apache.dubbo.common.extension.factory.AdaptiveExtensionFactory.getExtension(AdaptiveExtensionFactory.java:47)
+	at org.apache.dubbo.common.extension.ExtensionLoader.injectExtension(ExtensionLoader.java:566)
+	at org.apache.dubbo.common.extension.ExtensionLoader.createExtension(ExtensionLoader.java:535)
+	at org.apache.dubbo.common.extension.ExtensionLoader.getExtension(ExtensionLoader.java:351)
+	at org.apache.dubbo.registry.RegistryFactory$Adaptive.getRegistry(RegistryFactory$Adaptive.java)
+	at org.apache.dubbo.registry.integration.RegistryProtocol.refer(RegistryProtocol.java:379)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper.refer(ProtocolFilterWrapper.java:128)
+	at org.apache.dubbo.rpc.protocol.ProtocolListenerWrapper.refer(ProtocolListenerWrapper.java:69)
+	at org.apache.dubbo.qos.protocol.QosProtocolWrapper.refer(QosProtocolWrapper.java:70)
+	at org.apache.dubbo.rpc.Protocol$Adaptive.refer(Protocol$Adaptive.java)
+	at org.apache.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:401)
+	at org.apache.dubbo.config.ReferenceConfig.init(ReferenceConfig.java:329)
+	at org.apache.dubbo.config.ReferenceConfig.get(ReferenceConfig.java:250)
+	at org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor$ReferenceBeanInvocationHandler.init(ReferenceAnnotationBeanPostProcessor.java:269)
+	at org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor$ReferenceBeanInvocationHandler.access$100(ReferenceAnnotationBeanPostProcessor.java:242)
+	at org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor.buildInvocationHandler(ReferenceAnnotationBeanPostProcessor.java:236)
+	at org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor.buildProxy(ReferenceAnnotationBeanPostProcessor.java:219)
+	at org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor.doGetInjectedBean(ReferenceAnnotationBeanPostProcessor.java:134)
+	at org.apache.dubbo.config.spring.beans.factory.annotation.AnnotationInjectedBeanPostProcessor.getInjectedObject(AnnotationInjectedBeanPostProcessor.java:360)
+	at org.apache.dubbo.config.spring.beans.factory.annotation.AnnotationInjectedBeanPostProcessor$AnnotatedFieldElement.inject(AnnotationInjectedBeanPostProcessor.java:540)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.apache.dubbo.config.spring.beans.factory.annotation.AnnotationInjectedBeanPostProcessor.postProcessPropertyValues(AnnotationInjectedBeanPostProcessor.java:147)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1400)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$151/1926180325.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:29,485 WARN [main][SpringExtensionFactory.java:104] -  [DUBBO] No spring extension (bean) named:applicationContext, type:org.springframework.context.ConfigurableApplicationContext found, stop get bean., dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:29,525 DEBUG [main][AdaptiveClassCodeGenerator.java:104] -  [DUBBO] package org.apache.dubbo.rpc.cluster;
+import org.apache.dubbo.common.extension.ExtensionLoader;
+public class RouterFactory$Adaptive implements org.apache.dubbo.rpc.cluster.RouterFactory {
+public org.apache.dubbo.rpc.cluster.Router getRouter(org.apache.dubbo.common.URL arg0)  {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+org.apache.dubbo.common.URL url = arg0;
+String extName = url.getProtocol();
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.rpc.cluster.RouterFactory) name from url (" + url.toString() + ") use keys([protocol])");
+org.apache.dubbo.rpc.cluster.RouterFactory extension = (org.apache.dubbo.rpc.cluster.RouterFactory)ExtensionLoader.getExtensionLoader(org.apache.dubbo.rpc.cluster.RouterFactory.class).getExtension(extName);
+return extension.getRouter(arg0);
+}
+}, dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:29,543 INFO [main][AbstractRegistry.java:280] -  [DUBBO] Register: consumer://192.168.2.70/com.shanjupay.merchant.api.AppService?application=merchant-application&category=consumers&check=false&dubbo=2.0.2&interface=com.shanjupay.merchant.api.AppService&lazy=false&methods=queryAppByMerchant,queryAppInMerchant,createApp,getAppById&pid=19892&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1634393189412, dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:29,544 DEBUG [main][AbstractSpringCloudRegistry.java:116] - The URL[consumer://192.168.2.70/com.shanjupay.merchant.api.AppService?application=merchant-application&category=consumers&check=false&dubbo=2.0.2&interface=com.shanjupay.merchant.api.AppService&lazy=false&methods=queryAppByMerchant,queryAppInMerchant,createApp,getAppById&pid=19892&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1634393189412] should not be registered.
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:29,557 INFO [main][AbstractRegistry.java:305] -  [DUBBO] Subscribe: consumer://192.168.2.70/com.shanjupay.merchant.api.AppService?application=merchant-application&category=providers,configurators,routers&check=false&dubbo=2.0.2&interface=com.shanjupay.merchant.api.AppService&lazy=false&methods=queryAppByMerchant,queryAppInMerchant,createApp,getAppById&pid=19892&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1634393189412, dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:29,577 INFO [main][AbstractRegistry.java:280] -  [DUBBO] Register: consumer://192.168.2.70/com.shanjupay.merchant.api.AppService?application=merchant-application&category=consumers&check=false&dubbo=2.0.2&interface=com.shanjupay.merchant.api.AppService&lazy=false&methods=queryAppByMerchant,queryAppInMerchant,createApp,getAppById&pid=19892&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1634393189412, dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:29,694 INFO [main][AbstractRegistry.java:305] -  [DUBBO] Subscribe: consumer://192.168.2.70/com.shanjupay.merchant.api.AppService?application=merchant-application&category=providers,configurators,routers&check=false&dubbo=2.0.2&interface=com.shanjupay.merchant.api.AppService&lazy=false&methods=queryAppByMerchant,queryAppInMerchant,createApp,getAppById&pid=19892&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1634393189412, dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:29,732 WARN [main][AbstractRegistry.java:395] -  [DUBBO] Ignore empty notify urls for subscribe url consumer://192.168.2.70/com.shanjupay.merchant.api.AppService?application=merchant-application&category=providers,configurators,routers&check=false&dubbo=2.0.2&interface=com.shanjupay.merchant.api.AppService&lazy=false&methods=queryAppByMerchant,queryAppInMerchant,createApp,getAppById&pid=19892&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1634393189412, dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:29,734 WARN [com.alibaba.nacos.naming.client.listener][AbstractRegistry.java:395] -  [DUBBO] Ignore empty notify urls for subscribe url consumer://192.168.2.70/com.shanjupay.merchant.api.AppService?application=merchant-application&category=providers,configurators,routers&check=false&dubbo=2.0.2&interface=com.shanjupay.merchant.api.AppService&lazy=false&methods=queryAppByMerchant,queryAppInMerchant,createApp,getAppById&pid=19892&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1634393189412, dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:29,737 INFO [main][ReferenceConfig.java:421] -  [DUBBO] Refer dubbo service com.shanjupay.merchant.api.AppService from url registry://127.0.0.1:8848/org.apache.dubbo.registry.RegistryService?application=merchant-application&check=false&cluster=registryaware&dubbo=2.0.2&interface=com.shanjupay.merchant.api.AppService&lazy=false&methods=queryAppByMerchant,queryAppInMerchant,createApp,getAppById&pid=19892&qos.enable=false&qos.port=22310&refer=application%3Dmerchant-application%26check%3Dfalse%26dubbo%3D2.0.2%26interface%3Dcom.shanjupay.merchant.api.AppService%26lazy%3Dfalse%26methods%3DqueryAppByMerchant%2CqueryAppInMerchant%2CcreateApp%2CgetAppById%26pid%3D19892%26qos.enable%3Dfalse%26qos.port%3D22310%26register.ip%3D192.168.2.70%26release%3D2.7.3%26retries%3D-1%26side%3Dconsumer%26sticky%3Dfalse%26timeout%3D3000%26timestamp%3D1634393189412&register.ip=192.168.2.70&registry=nacos&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1634393189412, dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:29,787 INFO [main][AnnotatedInterfaceConfigBeanBuilder.java:84] - The configBean[type:ReferenceBean] has been built.
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:29,794 WARN [main][AbstractInterfaceConfig.java:265] -  [DUBBO] There's no valid metadata config found, if you are using the simplified mode of registry url, please make sure you have a metadata address configured properly., dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:29,807 INFO [main][AbstractInterfaceConfig.java:237] -  [DUBBO] There's no valid monitor config found, if you want to open monitor statistics for Dubbo, please make sure your monitor is configured properly., dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:29,808 INFO [main][AbstractInterfaceConfig.java:237] -  [DUBBO] There's no valid monitor config found, if you want to open monitor statistics for Dubbo, please make sure your monitor is configured properly., dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:29,820 INFO [main][AbstractRegistry.java:280] -  [DUBBO] Register: consumer://192.168.2.70/com.shanjupay.merchant.api.MerchantService?application=merchant-application&category=consumers&check=false&dubbo=2.0.2&interface=com.shanjupay.merchant.api.MerchantService&lazy=false&methods=queryStoreByPage,queryMerchantByTenantId,bindStaffToStore,queryStoreInMerchant,queryMerchantById,applyMerchant,createMerchant,createStore,createStaff&pid=19892&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1634393189794, dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:29,820 DEBUG [main][AbstractSpringCloudRegistry.java:116] - The URL[consumer://192.168.2.70/com.shanjupay.merchant.api.MerchantService?application=merchant-application&category=consumers&check=false&dubbo=2.0.2&interface=com.shanjupay.merchant.api.MerchantService&lazy=false&methods=queryStoreByPage,queryMerchantByTenantId,bindStaffToStore,queryStoreInMerchant,queryMerchantById,applyMerchant,createMerchant,createStore,createStaff&pid=19892&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1634393189794] should not be registered.
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:29,821 INFO [main][AbstractRegistry.java:305] -  [DUBBO] Subscribe: consumer://192.168.2.70/com.shanjupay.merchant.api.MerchantService?application=merchant-application&category=providers,configurators,routers&check=false&dubbo=2.0.2&interface=com.shanjupay.merchant.api.MerchantService&lazy=false&methods=queryStoreByPage,queryMerchantByTenantId,bindStaffToStore,queryStoreInMerchant,queryMerchantById,applyMerchant,createMerchant,createStore,createStaff&pid=19892&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1634393189794, dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:29,822 INFO [main][AbstractRegistry.java:280] -  [DUBBO] Register: consumer://192.168.2.70/com.shanjupay.merchant.api.MerchantService?application=merchant-application&category=consumers&check=false&dubbo=2.0.2&interface=com.shanjupay.merchant.api.MerchantService&lazy=false&methods=queryStoreByPage,queryMerchantByTenantId,bindStaffToStore,queryStoreInMerchant,queryMerchantById,applyMerchant,createMerchant,createStore,createStaff&pid=19892&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1634393189794, dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:29,836 INFO [main][AbstractRegistry.java:305] -  [DUBBO] Subscribe: consumer://192.168.2.70/com.shanjupay.merchant.api.MerchantService?application=merchant-application&category=providers,configurators,routers&check=false&dubbo=2.0.2&interface=com.shanjupay.merchant.api.MerchantService&lazy=false&methods=queryStoreByPage,queryMerchantByTenantId,bindStaffToStore,queryStoreInMerchant,queryMerchantById,applyMerchant,createMerchant,createStore,createStaff&pid=19892&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1634393189794, dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:29,843 WARN [main][AbstractRegistry.java:395] -  [DUBBO] Ignore empty notify urls for subscribe url consumer://192.168.2.70/com.shanjupay.merchant.api.MerchantService?application=merchant-application&category=providers,configurators,routers&check=false&dubbo=2.0.2&interface=com.shanjupay.merchant.api.MerchantService&lazy=false&methods=queryStoreByPage,queryMerchantByTenantId,bindStaffToStore,queryStoreInMerchant,queryMerchantById,applyMerchant,createMerchant,createStore,createStaff&pid=19892&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1634393189794, dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:29,844 INFO [main][ReferenceConfig.java:421] -  [DUBBO] Refer dubbo service com.shanjupay.merchant.api.MerchantService from url registry://127.0.0.1:8848/org.apache.dubbo.registry.RegistryService?application=merchant-application&check=false&cluster=registryaware&dubbo=2.0.2&interface=com.shanjupay.merchant.api.MerchantService&lazy=false&methods=queryStoreByPage,queryMerchantByTenantId,bindStaffToStore,queryStoreInMerchant,queryMerchantById,applyMerchant,createMerchant,createStore,createStaff&pid=19892&qos.enable=false&qos.port=22310&refer=application%3Dmerchant-application%26check%3Dfalse%26dubbo%3D2.0.2%26interface%3Dcom.shanjupay.merchant.api.MerchantService%26lazy%3Dfalse%26methods%3DqueryStoreByPage%2CqueryMerchantByTenantId%2CbindStaffToStore%2CqueryStoreInMerchant%2CqueryMerchantById%2CapplyMerchant%2CcreateMerchant%2CcreateStore%2CcreateStaff%26pid%3D19892%26qos.enable%3Dfalse%26qos.port%3D22310%26register.ip%3D192.168.2.70%26release%3D2.7.3%26retries%3D-1%26side%3Dconsumer%26sticky%3Dfalse%26timeout%3D3000%26timestamp%3D1634393189794&register.ip=192.168.2.70&registry=nacos&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1634393189794, dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:29,851 WARN [com.alibaba.nacos.naming.client.listener][AbstractRegistry.java:395] -  [DUBBO] Ignore empty notify urls for subscribe url consumer://192.168.2.70/com.shanjupay.merchant.api.MerchantService?application=merchant-application&category=providers,configurators,routers&check=false&dubbo=2.0.2&interface=com.shanjupay.merchant.api.MerchantService&lazy=false&methods=queryStoreByPage,queryMerchantByTenantId,bindStaffToStore,queryStoreInMerchant,queryMerchantById,applyMerchant,createMerchant,createStore,createStaff&pid=19892&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1634393189794, dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:30,085 INFO [main][AnnotatedInterfaceConfigBeanBuilder.java:84] - The configBean[type:ReferenceBean] has been built.
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:30,092 WARN [main][AbstractInterfaceConfig.java:265] -  [DUBBO] There's no valid metadata config found, if you are using the simplified mode of registry url, please make sure you have a metadata address configured properly., dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:30,107 INFO [main][AbstractInterfaceConfig.java:237] -  [DUBBO] There's no valid monitor config found, if you want to open monitor statistics for Dubbo, please make sure your monitor is configured properly., dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:30,108 INFO [main][AbstractInterfaceConfig.java:237] -  [DUBBO] There's no valid monitor config found, if you want to open monitor statistics for Dubbo, please make sure your monitor is configured properly., dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:30,117 INFO [main][AbstractRegistry.java:280] -  [DUBBO] Register: consumer://192.168.2.70/com.shanjupay.transaction.api.PayChannelService?application=merchant-application&category=consumers&check=false&dubbo=2.0.2&interface=com.shanjupay.transaction.api.PayChannelService&lazy=false&methods=queryPayChannelParamByAppAndPlatform,queryParamByAppPlatformAndPayChannel,queryPlatformChannel,bindPlatformChannelForApp,queryAppBindPlatformChannel,queryPayChannelByPlatformChannel,savePayChannelParam&pid=19892&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1634393190092, dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:30,118 DEBUG [main][AbstractSpringCloudRegistry.java:116] - The URL[consumer://192.168.2.70/com.shanjupay.transaction.api.PayChannelService?application=merchant-application&category=consumers&check=false&dubbo=2.0.2&interface=com.shanjupay.transaction.api.PayChannelService&lazy=false&methods=queryPayChannelParamByAppAndPlatform,queryParamByAppPlatformAndPayChannel,queryPlatformChannel,bindPlatformChannelForApp,queryAppBindPlatformChannel,queryPayChannelByPlatformChannel,savePayChannelParam&pid=19892&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1634393190092] should not be registered.
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:30,118 INFO [main][AbstractRegistry.java:305] -  [DUBBO] Subscribe: consumer://192.168.2.70/com.shanjupay.transaction.api.PayChannelService?application=merchant-application&category=providers,configurators,routers&check=false&dubbo=2.0.2&interface=com.shanjupay.transaction.api.PayChannelService&lazy=false&methods=queryPayChannelParamByAppAndPlatform,queryParamByAppPlatformAndPayChannel,queryPlatformChannel,bindPlatformChannelForApp,queryAppBindPlatformChannel,queryPayChannelByPlatformChannel,savePayChannelParam&pid=19892&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1634393190092, dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:30,119 INFO [main][AbstractRegistry.java:280] -  [DUBBO] Register: consumer://192.168.2.70/com.shanjupay.transaction.api.PayChannelService?application=merchant-application&category=consumers&check=false&dubbo=2.0.2&interface=com.shanjupay.transaction.api.PayChannelService&lazy=false&methods=queryPayChannelParamByAppAndPlatform,queryParamByAppPlatformAndPayChannel,queryPlatformChannel,bindPlatformChannelForApp,queryAppBindPlatformChannel,queryPayChannelByPlatformChannel,savePayChannelParam&pid=19892&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1634393190092, dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:30,127 INFO [main][AbstractRegistry.java:305] -  [DUBBO] Subscribe: consumer://192.168.2.70/com.shanjupay.transaction.api.PayChannelService?application=merchant-application&category=providers,configurators,routers&check=false&dubbo=2.0.2&interface=com.shanjupay.transaction.api.PayChannelService&lazy=false&methods=queryPayChannelParamByAppAndPlatform,queryParamByAppPlatformAndPayChannel,queryPlatformChannel,bindPlatformChannelForApp,queryAppBindPlatformChannel,queryPayChannelByPlatformChannel,savePayChannelParam&pid=19892&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1634393190092, dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:30,131 WARN [main][AbstractRegistry.java:395] -  [DUBBO] Ignore empty notify urls for subscribe url consumer://192.168.2.70/com.shanjupay.transaction.api.PayChannelService?application=merchant-application&category=providers,configurators,routers&check=false&dubbo=2.0.2&interface=com.shanjupay.transaction.api.PayChannelService&lazy=false&methods=queryPayChannelParamByAppAndPlatform,queryParamByAppPlatformAndPayChannel,queryPlatformChannel,bindPlatformChannelForApp,queryAppBindPlatformChannel,queryPayChannelByPlatformChannel,savePayChannelParam&pid=19892&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1634393190092, dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:30,132 WARN [com.alibaba.nacos.naming.client.listener][AbstractRegistry.java:395] -  [DUBBO] Ignore empty notify urls for subscribe url consumer://192.168.2.70/com.shanjupay.transaction.api.PayChannelService?application=merchant-application&category=providers,configurators,routers&check=false&dubbo=2.0.2&interface=com.shanjupay.transaction.api.PayChannelService&lazy=false&methods=queryPayChannelParamByAppAndPlatform,queryParamByAppPlatformAndPayChannel,queryPlatformChannel,bindPlatformChannelForApp,queryAppBindPlatformChannel,queryPayChannelByPlatformChannel,savePayChannelParam&pid=19892&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1634393190092, dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:30,132 INFO [main][ReferenceConfig.java:421] -  [DUBBO] Refer dubbo service com.shanjupay.transaction.api.PayChannelService from url registry://127.0.0.1:8848/org.apache.dubbo.registry.RegistryService?application=merchant-application&check=false&cluster=registryaware&dubbo=2.0.2&interface=com.shanjupay.transaction.api.PayChannelService&lazy=false&methods=queryPayChannelParamByAppAndPlatform,queryParamByAppPlatformAndPayChannel,queryPlatformChannel,bindPlatformChannelForApp,queryAppBindPlatformChannel,queryPayChannelByPlatformChannel,savePayChannelParam&pid=19892&qos.enable=false&qos.port=22310&refer=application%3Dmerchant-application%26check%3Dfalse%26dubbo%3D2.0.2%26interface%3Dcom.shanjupay.transaction.api.PayChannelService%26lazy%3Dfalse%26methods%3DqueryPayChannelParamByAppAndPlatform%2CqueryParamByAppPlatformAndPayChannel%2CqueryPlatformChannel%2CbindPlatformChannelForApp%2CqueryAppBindPlatformChannel%2CqueryPayChannelByPlatformChannel%2CsavePayChannelParam%26pid%3D19892%26qos.enable%3Dfalse%26qos.port%3D22310%26register.ip%3D192.168.2.70%26release%3D2.7.3%26retries%3D-1%26side%3Dconsumer%26sticky%3Dfalse%26timeout%3D3000%26timestamp%3D1634393190092&register.ip=192.168.2.70&registry=nacos&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1634393190092, dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:30,157 WARN [main][AbstractInterfaceConfig.java:265] -  [DUBBO] There's no valid metadata config found, if you are using the simplified mode of registry url, please make sure you have a metadata address configured properly., dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:30,187 INFO [main][AnnotatedInterfaceConfigBeanBuilder.java:84] - The configBean[type:ReferenceBean] has been built.
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:30,193 WARN [main][AbstractInterfaceConfig.java:265] -  [DUBBO] There's no valid metadata config found, if you are using the simplified mode of registry url, please make sure you have a metadata address configured properly., dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:30,209 INFO [main][AbstractInterfaceConfig.java:237] -  [DUBBO] There's no valid monitor config found, if you want to open monitor statistics for Dubbo, please make sure your monitor is configured properly., dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:30,210 INFO [main][AbstractInterfaceConfig.java:237] -  [DUBBO] There's no valid monitor config found, if you want to open monitor statistics for Dubbo, please make sure your monitor is configured properly., dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:30,219 INFO [main][AbstractRegistry.java:280] -  [DUBBO] Register: consumer://192.168.2.70/com.shanjupay.transaction.api.TransactionService?application=merchant-application&category=consumers&check=false&dubbo=2.0.2&interface=com.shanjupay.transaction.api.TransactionService&lazy=false&methods=getWXOAuthOpenId,createStoreQRCode,submitOrderByAli,getWXOAuth2Code,submitOrderByWechat,updateOrderTradeNoAndTradeState,queryPayOrder&pid=19892&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1634393190194, dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:30,219 DEBUG [main][AbstractSpringCloudRegistry.java:116] - The URL[consumer://192.168.2.70/com.shanjupay.transaction.api.TransactionService?application=merchant-application&category=consumers&check=false&dubbo=2.0.2&interface=com.shanjupay.transaction.api.TransactionService&lazy=false&methods=getWXOAuthOpenId,createStoreQRCode,submitOrderByAli,getWXOAuth2Code,submitOrderByWechat,updateOrderTradeNoAndTradeState,queryPayOrder&pid=19892&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1634393190194] should not be registered.
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:30,220 INFO [main][AbstractRegistry.java:305] -  [DUBBO] Subscribe: consumer://192.168.2.70/com.shanjupay.transaction.api.TransactionService?application=merchant-application&category=providers,configurators,routers&check=false&dubbo=2.0.2&interface=com.shanjupay.transaction.api.TransactionService&lazy=false&methods=getWXOAuthOpenId,createStoreQRCode,submitOrderByAli,getWXOAuth2Code,submitOrderByWechat,updateOrderTradeNoAndTradeState,queryPayOrder&pid=19892&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1634393190194, dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:30,221 INFO [main][AbstractRegistry.java:280] -  [DUBBO] Register: consumer://192.168.2.70/com.shanjupay.transaction.api.TransactionService?application=merchant-application&category=consumers&check=false&dubbo=2.0.2&interface=com.shanjupay.transaction.api.TransactionService&lazy=false&methods=getWXOAuthOpenId,createStoreQRCode,submitOrderByAli,getWXOAuth2Code,submitOrderByWechat,updateOrderTradeNoAndTradeState,queryPayOrder&pid=19892&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1634393190194, dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:30,227 INFO [main][AbstractRegistry.java:305] -  [DUBBO] Subscribe: consumer://192.168.2.70/com.shanjupay.transaction.api.TransactionService?application=merchant-application&category=providers,configurators,routers&check=false&dubbo=2.0.2&interface=com.shanjupay.transaction.api.TransactionService&lazy=false&methods=getWXOAuthOpenId,createStoreQRCode,submitOrderByAli,getWXOAuth2Code,submitOrderByWechat,updateOrderTradeNoAndTradeState,queryPayOrder&pid=19892&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1634393190194, dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:30,233 WARN [main][AbstractRegistry.java:395] -  [DUBBO] Ignore empty notify urls for subscribe url consumer://192.168.2.70/com.shanjupay.transaction.api.TransactionService?application=merchant-application&category=providers,configurators,routers&check=false&dubbo=2.0.2&interface=com.shanjupay.transaction.api.TransactionService&lazy=false&methods=getWXOAuthOpenId,createStoreQRCode,submitOrderByAli,getWXOAuth2Code,submitOrderByWechat,updateOrderTradeNoAndTradeState,queryPayOrder&pid=19892&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1634393190194, dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:30,234 WARN [com.alibaba.nacos.naming.client.listener][AbstractRegistry.java:395] -  [DUBBO] Ignore empty notify urls for subscribe url consumer://192.168.2.70/com.shanjupay.transaction.api.TransactionService?application=merchant-application&category=providers,configurators,routers&check=false&dubbo=2.0.2&interface=com.shanjupay.transaction.api.TransactionService&lazy=false&methods=getWXOAuthOpenId,createStoreQRCode,submitOrderByAli,getWXOAuth2Code,submitOrderByWechat,updateOrderTradeNoAndTradeState,queryPayOrder&pid=19892&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1634393190194, dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:30,234 INFO [main][ReferenceConfig.java:421] -  [DUBBO] Refer dubbo service com.shanjupay.transaction.api.TransactionService from url registry://127.0.0.1:8848/org.apache.dubbo.registry.RegistryService?application=merchant-application&check=false&cluster=registryaware&dubbo=2.0.2&interface=com.shanjupay.transaction.api.TransactionService&lazy=false&methods=getWXOAuthOpenId,createStoreQRCode,submitOrderByAli,getWXOAuth2Code,submitOrderByWechat,updateOrderTradeNoAndTradeState,queryPayOrder&pid=19892&qos.enable=false&qos.port=22310&refer=application%3Dmerchant-application%26check%3Dfalse%26dubbo%3D2.0.2%26interface%3Dcom.shanjupay.transaction.api.TransactionService%26lazy%3Dfalse%26methods%3DgetWXOAuthOpenId%2CcreateStoreQRCode%2CsubmitOrderByAli%2CgetWXOAuth2Code%2CsubmitOrderByWechat%2CupdateOrderTradeNoAndTradeState%2CqueryPayOrder%26pid%3D19892%26qos.enable%3Dfalse%26qos.port%3D22310%26register.ip%3D192.168.2.70%26release%3D2.7.3%26retries%3D-1%26side%3Dconsumer%26sticky%3Dfalse%26timeout%3D3000%26timestamp%3D1634393190194&register.ip=192.168.2.70&registry=nacos&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1634393190194, dubbo version: 2.7.3, current host: 192.168.2.70
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:30,240 WARN [main][AbstractApplicationContext.java:557] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'storeController': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'shanjupay.c2b.subject' in value "${shanjupay.c2b.subject}"
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:30,241 INFO [main][DubboGenericServiceFactory.java:159] - The Dubbo GenericService ReferenceBeans are destroying...
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:30,242 INFO [main][AnnotationInjectedBeanPostProcessor.java:293] - org.apache.dubbo.common.bytecode.proxy1@582dcd35 was destroying!
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:30,242 INFO [main][AnnotationInjectedBeanPostProcessor.java:293] - org.apache.dubbo.common.bytecode.proxy0@1e6bd263 was destroying!
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:30,242 INFO [main][AnnotationInjectedBeanPostProcessor.java:293] - org.apache.dubbo.common.bytecode.proxy1@582dcd35 was destroying!
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:30,242 INFO [main][AnnotationInjectedBeanPostProcessor.java:293] - org.apache.dubbo.common.bytecode.proxy2@394a6d2b was destroying!
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:30,243 INFO [main][AnnotationInjectedBeanPostProcessor.java:293] - org.apache.dubbo.common.bytecode.proxy3@635ff2a5 was destroying!
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:30,243 INFO [main][AnnotationInjectedBeanPostProcessor.java:305] - class org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor was destroying!
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:30,256 INFO [main][ConditionEvaluationReportLoggingListener.java:142] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:30,257 INFO [main][AwaitingNonWebApplicationListener.java:155] -  [Dubbo] Current Spring Boot Application is about to shutdown...
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:30,260 ERROR [main][SpringApplication.java:858] - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'storeController': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'shanjupay.c2b.subject' in value "${shanjupay.c2b.subject}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:380)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$151/1926180325.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'shanjupay.c2b.subject' in value "${shanjupay.c2b.subject}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:172)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$$Lambda$185/769877691.resolveStringValue(Unknown Source)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:851)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1188)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	... 41 more
+[${project.name}][${env:SERVER_PORT}] 2021-10-16 22:06:30,264 ERROR [main][TestContextManager.java:250] - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@2f953efd] to prepare test instance [com.shanjupay.merchant.TokenTemp@615e83ac]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'storeController': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'shanjupay.c2b.subject' in value "${shanjupay.c2b.subject}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:380)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$151/1926180325.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	... 24 more
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'shanjupay.c2b.subject' in value "${shanjupay.c2b.subject}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:172)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$$Lambda$185/769877691.resolveStringValue(Unknown Source)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:851)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1188)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	... 41 more

@@ -29,6 +29,8 @@ import java.util.UUID;
 @Api(value="商户平台应用接口",tags = "商户平台应用接口",description = "商户平台应用接口")
 public class MerchantController {
 
+
+    //商户服务，dubbo调用
     @org.apache.dubbo.config.annotation.Reference  //注入的远程调用的接口
     MerchantService merchantService;
 
@@ -53,10 +55,17 @@ public class MerchantController {
         Long merchantId = SecurityUtil.getMerchantId();
         return merchantService.queryMerchantById(merchantId);
     }
+
+    /**
+     * 获取手机验证码
+     * @param phone 手机号
+     * @return key 验证验证码时候用到的key
+     */
     @ApiOperation("获取手机验证码")
     @GetMapping("/sms")
     @ApiImplicitParam(value = "手机号",name = "phone",required = true,dataType = "string",paramType = "query")
     public String getSMSCode(@RequestParam("phone") String phone){
+        //TODO 验证码防刷？
         //向验证码服务请求发送验证码
         return smsService.sendMsg(phone);
     }
@@ -115,7 +124,8 @@ public class MerchantController {
             @ApiImplicitParam(name = "merchantInfo", value = "商户认证资料", required = true, dataType = "MerchantDetailVO", paramType = "body")
     })
     public void saveMerchant(@RequestBody  MerchantDetailVO merchantInfo){
-        //解析token，取出当前登录商户的id
+        //解析token，取出当前登录商户的id--前提，商户以登录，进行资质申请
+        //token是sass平台给登陆的商户颁发的token，存在前段，前段请求，携带token
         Long merchantId = SecurityUtil.getMerchantId();
 
         //Long merchantId,MerchantDTO merchantDTO

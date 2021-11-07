@@ -56,7 +56,8 @@
         <!--DEBUG   500-->
         <!--TRACE   600-->
         <!--ALL   Integer.MAX_VALUE-->
-        <Root level="INFO" includeLocation="true">
+        <!--调试环境debug，生产环境info或者WARN-->
+        <Root level="DEBUG" includeLocation="true">
             <AppenderRef ref="AsyncAppender"/>
             <AppenderRef ref="Console"/>
         </Root>

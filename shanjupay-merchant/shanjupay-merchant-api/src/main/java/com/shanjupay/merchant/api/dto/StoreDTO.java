@@ -15,7 +15,7 @@ public class StoreDTO implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @ApiModelProperty(value = "门店id")
-    @JsonSerialize(using= ToStringSerializer.class)//进行json转换的时候 ，转成string
+    @JsonSerialize(using= ToStringSerializer.class)//进行json转换的时候 ，转成string，前端js处理超过位的数字时会出现精度丢失问题
     private Long id;
 
     @ApiModelProperty(value = "门店名称")

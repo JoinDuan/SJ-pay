@@ -27,6 +27,7 @@ import java.util.List;
 @Slf4j
 public class PlatformParamController {
 
+    //dubbo服务
     @Reference
     PayChannelService payChannelService;
 
@@ -53,7 +54,7 @@ public class PlatformParamController {
             @ApiImplicitParam(name = "platformChannel", value = "服务类型", required = true, dataType = "String", paramType = "query")
     })
     @GetMapping("/my/merchants/apps/platformchannels")
-    public int queryAppBindPlatformChannel(@RequestParam String appId, @RequestParam String platformChannel){
+    public Integer queryAppBindPlatformChannel(@RequestParam String appId, @RequestParam String platformChannel){
         return payChannelService.queryAppBindPlatformChannel(appId,platformChannel);
     }
 
@@ -63,7 +64,7 @@ public class PlatformParamController {
     List<PayChannelDTO> queryPayChannelByPlatformChannel(@PathVariable("platformChannelCode") String platformChannelCode) throws BusinessException{
         return payChannelService.queryPayChannelByPlatformChannel(platformChannelCode);
 
-    }
+    }   
 
     @ApiOperation("商户配置支付渠道参数")
     @ApiImplicitParam(name = "payChannelParamDTO", value = "支付渠道参数", required = true, dataType = "PayChannelParamDTO", paramType = "body")
@@ -85,7 +86,8 @@ public class PlatformParamController {
             @ApiImplicitParam(value = "服务类型代码",name = "platformChannel",dataType = "String",paramType = "path")
     })
     @GetMapping(value = "/my/pay-channel-params/apps/{appId}/platform-channels/{platformChannel}")
-    public  List<PayChannelParamDTO> queryPayChannelParam(@PathVariable("appId")String appId,@PathVariable("platformChannel")String platformChannel){
+    public  List<PayChannelParamDTO> queryPayChannelParam(@PathVariable("appId")String appId,
+                                                            @PathVariable("platformChannel")String platformChannel){
         return payChannelService.queryPayChannelParamByAppAndPlatform(appId,platformChannel);
     }
 
@@ -96,7 +98,9 @@ public class PlatformParamController {
             @ApiImplicitParam(value = "支付渠道代码",name = "payChannel",dataType = "String",paramType = "path")
     })
     @GetMapping(value = "/my/pay-channel-params/apps/{appId}/platform-channels/{platformChannel}/pay-channels/{payChannel}")
-    public  PayChannelParamDTO queryPayChannelParam(@PathVariable("appId")String appId,@PathVariable("platformChannel")String platformChannel,@PathVariable("payChannel") String payChannel){
+    public  PayChannelParamDTO queryPayChannelParam(@PathVariable("appId")String appId,
+                                                    @PathVariable("platformChannel")String platformChannel,
+                                                    @PathVariable("payChannel") String payChannel){
         return payChannelService.queryParamByAppPlatformAndPayChannel(appId,platformChannel,payChannel);
     }
 

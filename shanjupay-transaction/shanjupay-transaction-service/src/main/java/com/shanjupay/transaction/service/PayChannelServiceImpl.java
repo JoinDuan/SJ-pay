@@ -141,6 +141,7 @@ public class PayChannelServiceImpl implements PayChannelService {
         }else{
             //否则添加配置
             PayChannelParam entityNew = PayChannelParamConvert.INSTANCE.dto2entity(payChannelParam);
+            //这里是因为mybatisPlus会帮助生成主键
             entityNew.setId(null);
             entityNew.setAppPlatformChannelId(appPlatformChannelId);//应用与服务类型绑定关系id
             payChannelParamMapper.insert(entityNew);

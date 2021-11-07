@@ -37,7 +37,7 @@ public class QiniuUtils {
     public static void  upload2qiniu(String accessKey,String secretKey,String bucket, byte[] bytes,String fileName) throws RuntimeException{
 
         //构造一个带指定 Region 对象的配置类，指定存储区域，和存储空间选择的区域一致
-        Configuration cfg = new Configuration(Region.huanan());
+        Configuration cfg = new Configuration(Region.huadong());
         //...其他参数参考类注释
         UploadManager uploadManager = new UploadManager(cfg);
 
@@ -77,13 +77,13 @@ public class QiniuUtils {
     private static void testUpload(){
         //构造一个带指定 Region 对象的配置类，指定存储区域，和存储空间选择的区域一致
         Configuration cfg = new Configuration(Region.huanan());
-//...其他参数参考类注释
+        //...其他参数参考类注释
         UploadManager uploadManager = new UploadManager(cfg);
-//...生成上传凭证，然后准备上传
+        //...生成上传凭证，然后准备上传
         String accessKey = "vG3krn6ZU9j_KCJEsOW-76A3RxEbgCkN6tkTDOf_";
         String secretKey = "p04hR8a1151UXAb0K3GpYznPxAGuSj_9LbegmJuS";
         String bucket = "shanjupay-m1";
-//默认不指定key的情况下，以文件内容的hash值作为文件名
+        //默认不指定key的情况下，以文件内容的hash值作为文件名
         String key = UUID.randomUUID().toString()+".png";
         FileInputStream fileInputStream = null;
         try {
@@ -92,7 +92,7 @@ public class QiniuUtils {
             fileInputStream = new FileInputStream(new File(filePath));
             //得到本地文件的字节数组
             byte[] bytes = IOUtils.toByteArray(fileInputStream);
-//            byte[] uploadBytes = "hello qiniu cloud".getBytes("utf-8");
+            //byte[] uploadBytes = "hello qiniu cloud".getBytes("utf-8");
             //认证
             Auth auth = Auth.create(accessKey, secretKey);
             //认证通过后得到token（令牌）

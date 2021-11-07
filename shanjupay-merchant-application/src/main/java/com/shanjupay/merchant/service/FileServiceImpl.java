@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class FileServiceImpl implements FileService{
 
+    //都在nacos配置的
     @Value("${oss.qiniu.url}")
     private String qiniuUrl;
     @Value("${oss.qiniu.accessKey}")

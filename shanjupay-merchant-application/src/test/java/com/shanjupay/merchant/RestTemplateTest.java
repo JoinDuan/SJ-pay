@@ -10,6 +10,13 @@ import org.springframework.http.*;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.web.client.RestTemplate;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -32,6 +39,7 @@ public class RestTemplateTest {
         //向url发送http请求，得到响应结果
         ResponseEntity<String> forEntity = restTemplate.getForEntity(url, String.class);
         String body = forEntity.getBody();
+        log.info("收到响应结果:{}",body);
         System.out.println(body);
 
     }
@@ -61,4 +69,6 @@ public class RestTemplateTest {
         String key = (String) result.get("key");
         System.out.println(key);
     }
+
+
 }

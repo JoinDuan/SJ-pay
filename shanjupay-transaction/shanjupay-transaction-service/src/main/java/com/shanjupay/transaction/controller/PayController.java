@@ -66,7 +66,6 @@ public class PayController {
                 //先获取授权码，申请openid，再到支付确认页面
                 return transactionService.getWXOAuth2Code(payOrderDTO);
              default:
-
         }
         //不支持客户端类型，转发到错误页面
         return "forward:/pay-page-error";
@@ -105,7 +104,7 @@ public class PayController {
     }
 
     /**
-     * 支付宝的下单接口,前端订单确认页面，点击确认支付，请求进来
+     * 支付宝的下单接口,前端订单确认页面，点击确认支付，进入该请求
      * @param orderConfirmVO 订单信息
      * @param request
      * @param response

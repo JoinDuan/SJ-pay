@@ -25,11 +25,12 @@ import java.io.IOException;
 public class PayTestController {
 
     //应用id
-    String APP_ID = "2016101900725017";
+    String APP_ID = "2021000118608467";
     //应用私钥
-    String APP_PRIVATE_KEY = "MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCVH5Y2CJwAlDQWE093mRqjPvI7sqObVM+ym7qgi+Ewlg0t7UTT9/u+9SWQwZsZ5Oabt3OWxF+1CjX5dqCARLh0uGKZQmLs+t4rSpSVA67RHtauHOG8mPkskkm+akTSsGDDFkOfdJ2T8f7ykBa1R2hZRQB5KRP+6pRifdYM1V2B9TWBmeb7YPyZnpe/4UHRkRz9iEOlXxBuy4nAxF/2LwJTwtILsASZwFnMT6HVhaJ9M4J9o6wO3Le/NEelUXiDRgp6K/fEmJXo2lqHHeIncAthp0Pe2i4RovEHBGIFolvDyz9cr+HXRMTvMT6FkXX+dwLx+EDKM7eaByUfDkleDPvBAgMBAAECggEBAIvhdEK9MrCsVGt8s6dJO55ztj9fY26aULWGtLpSW+r6ZeR104FN9Zx7UkCGC1pvyA27OLbs/6XPrS+TIh0P2ULLjtmaVzdaXzqWm+dn6/0Hg3MRboI9sEYp9vihsGs9vZZh9Q7HEeUsM+0OUe67y9spCbedW79cBdKZnUaugicbEQQtmvlwwf3sjct6ymY30GQHnmEA20+4LFVO0Oz/VoxuodX/4FPk5Wehn9XyD8ql2T+6BmRTrVyR7BRepl2NAbYRPBLSyjDQRBWswNqOKPdA0DBanQWCmD6gfMxdpIWNtvqL/Pe939Q2lhexIZPhemudYRJCUkW3tCSskgUWvP0CgYEAxKmxGj4AUdQeAYU9jtfgoQKFJECZJMyFDRq4ntackmiOi/1vMsLalyUu/kLzaaUEekOM3CzVDX7AyZo0fhQ12qaDUY5wjKrbPpjLFAU/wvkis9HdKRYtj854pETMXnhS5BNFz1EihviIRMhPE93eUjfqViT4Wh9aA4wAsMWpJ4sCgYEAwh3t7OVwcZwLYkmlJyi8mH+Npn01TkElM5R0j3Thcr9Nrt06aNNByS4lc3BzCnjbLztBBESuibcQ0zTIQbz75KPgveGTcymjuV3TyKCHcYqcoFYrF3Z/lEL/1fggp9v8oQd/dDC2VZ/qhB8uh+9WNuZjZfsZFz56M9EOdZiGM2MCgYBGZUOa1CTDJb2T58DQN+AVYlSMVH89F+Rse2somEO1eK3F2HMMZYlfXxUCOK7u2v3OUg3C5l1hFkUmJQezNcLNQJty/xy0jZgrQQA4a2SWgx1z5qRWx7SJbGvsyR+qlUF+mJN9kVpdm+sTS+xafSnOnmtIaLVpdR2AdYXtwOM63wKBgC3PNljThIerFZyqWIk3OdqbL2h839mJ0ier/x3jrViRANolZyVZxYqek0P844kzIDazOxKwyqfBRf0x1Zh96sv4SI9G7q8cwoB6PgJ4r74BwhisfRraYh0w+oMaPUqfxaySwmc/H6hxRrzLRwXZW3U1RXvJmBA+NESKL2ldBz6VAoGBAIGoQeP5GTx2J0NnP4+G6LrA5ZNbhyBSSNeXB/eOmHOid1RpiCPOLJv5WD6lCaNNrDwz6tYugGz85JkU3/jA2LZrHoen31tOyGinXNXscUoklEOyicUDyQtpqot1E6nR9hoNuNAp2Mj5Mjwhp1W5PqqbNhh7dF/gt3ztFiY5Z2/X";
-   //支付宝公钥
-    String ALIPAY_PUBLIC_KEY = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoy8UIDCY2ZrrpDRbKIW/Zic3LPBXHGe5nRPLu9t1ud7PRDv5UDzwlhDRwTRnNAe8q3NZJP+ki3NzAY1Ky0QlIJZ6J9R4PRWHshR56U8kReLwuFfhQrYB5aKy8PMpRp41VT39+ywQNlD+UNbziSuRlmT0sjKPM7UCg3D9NucLKlWPfvH5mq+rWIs6pAOfcUDhSOCPS3lgHpMhpr7lYe2RFReKifFsBzEIOWBM8MGbwl0CYyASHKUtydfVDWE2k5g9N7Ypf3QgWYdNpc07vgYjSo3HPl5wLCE7bd7Haphai9gvaGFuEiscApDbQ4b2qWAIpLcwcBJnR+uQbMfYNFr2cQIDAQAB";
+    String APP_PRIVATE_KEY = "MIIEuwIBADANBgkqhkiG9w0BAQEFAASCBKUwggShAgEAAoIBAQCL3RDYKE5TYYbMYVLMDhlhet/eXbgS80ebXf05mUFi/4/sEdsOM7k862MdYQdTJ3r6ev41h6vREgszv4wGyk4/mYi6mgxEQElFRGXSxfBvcxz2Qrhb4f7t3rhWaXm/ahVro1UDu3HfeeExdEheoK23a0UYjmRdLgOPbZbDS3BBCSzu0vpQ9y2KZkYYLbReg3QrUaQ/Dte4OBn8DCZriLt9UcoC+C+RXIUR2+a2Tu01x1baltCMV8t14+ALBAR+cg7q0KqKvFKXtVThT/M4KmoeKSE9Kg4sGhTmO3BCap8lJZRzbiOzcb21ZgfGfiyJ0C2sQTIa4Phaylpcq2Ts0lKfAgMBAAECggEAUT1IEnZfAJmuhbqmMDakUXXg4TXIvOEon7tZYgJ983YEcBfzCG3M0/DZ8m+wpIFTMnkMfaVfjKIRda52NF+AUfrpa5IdO+unY5+WEXa98M6JbRVWJrC/tgVfR3oeqKuC47HMqM1RGICf6GzluGlWXirlyJy0+VbH5KDAKJICExPXs17PGXNgNbb/wykwQbKNOVR+sGVS8oIrxbWr2OQ+PRbP9SmbKSEGgVhV7/bjxjdMoLvOIFCfLANrwUb78+SmGb9qnu1gBev5bL8kBxG2aCOvpDbhR0ceL+7u96sbfmhoMXK2MKHktZjOAooPcIiAwg+zeyRvIz7ZEN+687nOGQKBgQDN/G7gj7vZTidZX/OfMlE8vPTTQGdeSYp/K31BBNa4mzdCqWPgbJqngtXlH5AqNyMqY+6FSJUfuYA2pT5/I83CZy2Jw+wGro0ArpY9pv9a6H/v4cU1qU/DQRX9MFxo2XX68Vexg1dmuasPCNYtMe4a94zyOE4QgRjkA1WN9nj8swKBgQCt0qAf6cRK2L3UI4SDFHAlvsS0Lc2P9lBGBSh1FxIoUahHEptVp7fogSTn1jymAKiGmuAQs+T/pV9Wz1548MlXE5UAyk+ImFR4KJSRlIu/f9Y8/DR58W8OyPME/e8RTgUqEAvIXAsa+s46WPSyLv0lWbf8KKYVXEkplBKcdx7gZQKBgCVWFybfBraZwuohSUBW14DB40KTTuk5PUBVuqtZXC4z/C06FN9t8A5i2bBhKzlrqxUY7ff8swMAFaxSAWT8MWSGXSu2doazht1Tx+m+5lQtBluNubhDSzDiEEFHTci3efoVWsbTPrlg+A+Ok3u3rCf5LPQOnp/BNqjFrfFAdqefAn8qxqqhL+YehTgx/Iuftmfi4g+GR79Ork8S7DIInqTZRz8iPnH7okqf7Sgn5ZEHSSIv/e0mLx8ryoar1lxpZtgllawVhbQM6W/gIhxttyCs/8i5OVewqrmp6cnkcJlkqM6ci1Za+EvDV/VoZnvRXb7uciXU6Cv3Fb7rfIUX/DidAoGBAIMArleD6HKWI67z3+vcEFLuep5jBQVvw8wL0/VE2kj2DKdKcK8T3wa6/MMt1zjPlS7nstP8ZhWxuJydqTq8blNr2DGefIMYxy/zdHgw9ga3Kmhh0pTiF8PH6WACtGVVoRnMbsvPmS5x7IVCA/SULABf1Oo+lGW3NBsfrJI85eQZ";
+
+    //支付宝公钥
+    String ALIPAY_PUBLIC_KEY = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAi90Q2ChOU2GGzGFSzA4ZYXrf3l24EvNHm139OZlBYv+P7BHbDjO5POtjHWEHUyd6+nr+NYer0RILM7+MBspOP5mIupoMREBJRURl0sXwb3Mc9kK4W+H+7d64Vml5v2oVa6NVA7tx33nhMXRIXqCtt2tFGI5kXS4Dj22Ww0twQQks7tL6UPctimZGGC20XoN0K1GkPw7XuDgZ/Awma4i7fVHKAvgvkVyFEdvmtk7tNcdW2pbQjFfLdePgCwQEfnIO6tCqirxSl7VU4U/zOCpqHikhPSoOLBoU5jtwQmqfJSWUc24js3G9tWYHxn4sidAtrEEyGuD4WspaXKtk7NJSnwIDAQAB";
     String CHARSET = "utf-8";
     //支付宝接口的网关地址，正式"https://openapi.alipay.com/gateway.do"
     String serverUrl = "https://openapi.alipaydev.com/gateway.do";
@@ -45,7 +46,7 @@ public class PayTestController {
 //        alipayRequest.setReturnUrl("http://domain.com/CallBack/return_url.jsp");
 //        alipayRequest.setNotifyUrl("http://domain.com/CallBack/notify_url.jsp");//在公共参数中设置回跳和通知地址
         alipayRequest.setBizContent("{" +
-                " \"out_trade_no\":\"20150420010101017\"," +
+                " \"out_trade_no\":\"20150420010101233\"," +
                 " \"total_amount\":\"88.88\"," +
                 " \"subject\":\"Iphone6 16G\"," +
                 " \"product_code\":\"QUICK_WAP_PAY\"" +

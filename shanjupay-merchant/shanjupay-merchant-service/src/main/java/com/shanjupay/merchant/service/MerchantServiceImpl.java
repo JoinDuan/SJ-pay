@@ -124,12 +124,8 @@ public class MerchantServiceImpl implements MerchantService {
 
          */
         CreateTenantRequestDTO createTenantRequestDTO = new CreateTenantRequestDTO();
-        createTenantRequestDTO.setMobile(merchantDTO.getMobile());
-        createTenantRequestDTO.setUsername(merchantDTO.getUsername());
-        createTenantRequestDTO.setPassword(merchantDTO.getPassword());
-        createTenantRequestDTO.setTenantTypeCode("shanju-merchant");//租户类型
-        createTenantRequestDTO.setBundleCode("shanju-merchant");//套餐，根据套餐进行分配权限
-        createTenantRequestDTO.setName(merchantDTO.getUsername());//租户名称，和账号名一样
+        // createTenantRequestDTO所需属性的赋值
+        initTenant(createTenantRequestDTO,merchantDTO);
 
         //如果租户在SaaS已经存在，SaaS直接 返回此租户的信息，否则进行添加
         TenantDTO tenantAndAccount = tenantService.createTenantAndAccount(createTenantRequestDTO);
@@ -248,13 +244,13 @@ public class MerchantServiceImpl implements MerchantService {
 
         }
 
-        //在同一个商户下员工的账号唯一
+        // 在同一个商户下员工的账号唯一
         Boolean existStaffByUserName = isExistStaffByUserName(staffDTO.getUsername(), staffDTO.getMerchantId());
         if(existStaffByUserName){
             throw new BusinessException(CommonErrorCode.E_100114);
         }
 
-        //在同一个商户下员工的手机号唯一
+        // 在同一个商户下员工的手机号唯一
         Boolean existStaffByMobile = isExistStaffByMobile(staffDTO.getMobile(), staffDTO.getMerchantId());
         if(existStaffByMobile){
             throw new BusinessException(CommonErrorCode.E_100113);
@@ -348,5 +344,19 @@ public class MerchantServiceImpl implements MerchantService {
         Integer count = staffMapper.selectCount(new LambdaQueryWrapper<Staff>().eq(Staff::getUsername,username)
                 .eq(Staff::getMerchantId, merchantId));
         return count>0;
+    }
+
+    /**
+     * CreateTenantRequestDTO的所需属性赋值
+     * @param tenantRequestDTO
+     * @param merchantDTO
+     */
+    private void initTenant(CreateTenantRequestDTO tenantRequestDTO,MerchantDTO merchantDTO){
+        tenantRequestDTO.setMobile(merchantDTO.getMobile());
+        tenantRequestDTO.setUsername(merchantDTO.getUsername());
+        tenantRequestDTO.setPassword(merchantDTO.getPassword());
+        tenantRequestDTO.setTenantTypeCode("shanju-merchant");//租户类型
+        tenantRequestDTO.setBundleCode("shanju-merchant");//套餐，根据套餐进行分配权限
+        tenantRequestDTO.setName(merchantDTO.getUsername());//租户名称，和账号名一样
     }
 }

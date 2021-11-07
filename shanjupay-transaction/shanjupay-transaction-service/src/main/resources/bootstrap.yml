@@ -1,5 +1,5 @@
 server:
-  port: 56050 #启动端口 命令行注入
+  port: 56010 #启动端口 命令行注入
 
 nacos:
   server:
@@ -14,12 +14,12 @@ spring:
     nacos:
       discovery:
         server-addr: ${nacos.server.addr}
-        namespace: f5eec3c1-4f05-40cd-964a-c8d44f342ab4
+        namespace: 30f94527-f647-488d-a8bc-b6519a1d13ab
         cluster-name: DEFAULT
       config:
         server-addr: ${nacos.server.addr} # 配置中心地址
         file-extension: yaml
-        namespace: f5eec3c1-4f05-40cd-964a-c8d44f342ab4 #2ed00aaa-b760-4171-baa9-83d92e509a41 # 默认开发环境郑州区 命令行注入
+        namespace: 30f94527-f647-488d-a8bc-b6519a1d13ab #30f94527-f647-488d-a8bc-b6519a1d13ab # 默认开发环境郑州区 命令行注入
         group: SHANJUPAY_GROUP # 聚合支付业务组
         ext-config:
           -
