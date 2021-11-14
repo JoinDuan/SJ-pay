@@ -11,7 +11,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @Component
 public class WebMvcConfig implements WebMvcConfigurer {
     /**
-     * 添加静态资源文件，外部可以直接访问地址
+     * 添加静态资源文件，外部可以直接访问地址，防止后面拦截器之类的拦截
      *
      * @param registry
      */

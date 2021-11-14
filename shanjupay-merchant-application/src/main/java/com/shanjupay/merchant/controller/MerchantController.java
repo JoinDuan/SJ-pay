@@ -26,7 +26,7 @@ import java.util.UUID;
  * @version 1.0
  **/
 @RestController
-@Api(value="商户平台应用接口",tags = "商户平台应用接口",description = "商户平台应用接口")
+@Api(tags = "商户平台应用接口")
 public class MerchantController {
 
 
